@@ -9,7 +9,7 @@ Install the following:
 - Vagrant ([download](http://www.vagrantup.com/downloads.html))
 - Ansible
   - `pip install ansible` via [pip](http://pip.readthedocs.org/en/latest/installing.html) (All Platforms)
-  - `brew intall ansible` via [homebrew](http://brew.sh/) (OSX)
+  - `brew install ansible` via [homebrew](http://brew.sh/) (OSX)
   - `apt-get/yum install ansible` (Linux)
 
 Then run `vagrant up`.
