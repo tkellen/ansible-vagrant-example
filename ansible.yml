@@ -14,9 +14,10 @@
     - name: make sure nodejs is installed
       apt: name=nodejs state=present
 
-    # does not work, see https://github.com/ansible/ansible-modules-extras/issues/137
+    # use npm module when this issue is resolved:
+    # https://github.com/ansible/ansible-modules-extras/issues/137
     - name: make sure the latest npm is installed
-      npm: name=npm global=true
+      command: npm install -g npm
 
     - name: make sure git is installed
       apt: name=git state=present
