@@ -3,7 +3,9 @@
 
 - hosts: all
   remote_user: vagrant
-  sudo: yes
+  become: true
+  become_user: root
+  become_method: sudo
   tasks:
     - name: make sure node ppa is available
       apt_repository: repo='ppa:chris-lea/node.js'
